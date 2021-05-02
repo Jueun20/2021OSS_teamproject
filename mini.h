@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 typedef struct{
     char name[50]; //제품명
     char cate[50]; //소비 분류
