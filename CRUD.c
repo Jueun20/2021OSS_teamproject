@@ -1,3 +1,4 @@
+//createItem() 
 int createItem(Item *p){
         printf("날짜: ");
         scanf(" %d", &p -> date);
