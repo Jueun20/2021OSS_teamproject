@@ -2,7 +2,7 @@ typedef struct{
     char name[50]; //제품명
     char cate[50]; //소비 분류
     int price; //소비 제품 가격
-    int data; //소비 날짜
+    int date; //소비 날짜
 } Item;
 
 int createItem(Item *p); //2. 제품 추가하기_C
