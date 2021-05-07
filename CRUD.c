@@ -16,6 +16,11 @@ int createItem(Item *p){
         return 1;
 }
 
+void readItem(Item p){
+        printf("%d  ||  %s  ||  %d  ||  %s \n", p.data, p.cate, p.price, p.name);
+        printf("\n");
+}
+
 //update 함수
 int updateItem(Item *p){
         printf("날짜: ");
