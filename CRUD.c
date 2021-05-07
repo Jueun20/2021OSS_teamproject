@@ -34,6 +34,7 @@ int updateItem(Item *p){
 	
 	return 1;
 }
+
 //delete 함수
 int deleteProduct(Item *p){
         p->price = -1;
