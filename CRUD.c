@@ -18,7 +18,7 @@ int createItem(Item *p){
 
 //readItem()
 void readItem(Item p){
-	printf("   Date   ||   Cate   ||   Price   ||");
+	printf("   Date   ||   Cate   ||   Price   ||   Name");
         printf("\t%d  ||  %s  ||  %d  ||  %s \n", p.data, p.cate, p.price, p.name);
         printf("\n");
 }
