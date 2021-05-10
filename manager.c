@@ -12,7 +12,7 @@ int selectMenu(){
         printf("7. 분류검색\n");
         printf("8. 가격검색\n");
         printf("0. 종료\n\n");
-        printf("=> 원하는 메뉴는: ");
+        printf("=> 원하는 번호를 입력하세요: ");
         scanf(" %d", &menu);
 
         return menu;
