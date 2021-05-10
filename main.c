@@ -53,10 +53,8 @@ int main(void){
     else if(menu == 8) {
       searchDate(ilist, index);
     }
-    
-
-
-
+    printf("종료되었습니다:-)\n");
+    return 0;
   }
 }
 
