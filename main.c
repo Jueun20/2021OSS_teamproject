@@ -29,7 +29,7 @@ int main(void){
       }
     }
     else if(menu == 4){
-      int no = selectDataNo(ilist, index);
+      int no = selectDataNum(ilist, index);
       if(no > 0) {
         printf("정말로 삭제하시겠습니까?(삭제: 1) ");
       }
@@ -41,7 +41,7 @@ int main(void){
         printf("=> 삭제되었습니다 :-)\n");
       }
     }
-    else if(menu == 5) {
+    /*else if(menu == 5) {
       saveData(ilist, index);
     }
     else if(menu == 6) {
@@ -52,7 +52,7 @@ int main(void){
     }
     else if(menu == 8) {
       searchDate(ilist, index);
-    }
+    }*/
     printf("종료되었습니다:-)\n");
     return 0;
   }
