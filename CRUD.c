@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdilib.h>
+#include "item.h"
+
 //createItem() 
 int createItem(Item *p){
         printf("날짜: ");
