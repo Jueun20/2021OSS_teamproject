@@ -4,7 +4,7 @@
 #include "item.h"
 
 int main(void){
-  Product ilist[50];
+  Item ilist[50];
   int index = 0;
   int count = 0, menu;
   
