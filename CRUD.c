@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdilib.h>
+#include <string.h>
 #include "item.h"
 
 //createItem() 
