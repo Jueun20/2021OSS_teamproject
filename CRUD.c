@@ -22,8 +22,7 @@ int createItem(Item *p){
 
 //readItem()
 void readItem(Item p){
-	printf("   Date   ||   Cate   ||   Price   ||   Name   \n");
-        printf("\t%d  ||  %s  ||  %d  ||  %s \n", p.date, p.cate, p.price, p.name);
+        printf("%d  ||  %s  ||  %d  ||  %s \n", p.date, p.cate, p.price, p.name);
         printf("\n");
 }
 
@@ -47,7 +46,7 @@ int updateItem(Item *p){
 }
 
 //delete 함수
-int deleteProduct(Item *p){
+int deleteItem(Item *p){
         p->price = -1;
         return 1;
 } 
