@@ -12,7 +12,8 @@ int main(void){
     menu = selectMenu();
     if(menu == 0) break;
     if(menu == 1){
-      listItem(ilist, index);
+//      listItem(ilist, index);
+      readItem(ilist[0]);
     }
     else if(menu == 2){
       count += createItem(&ilist[index]);
@@ -53,9 +54,9 @@ int main(void){
     else if(menu == 8) {
       searchDate(ilist, index);
     }*/
-    printf("종료되었습니다:-)\n");
-    return 0;
   }
+  printf("종료되었습니다:-)\n");
+  return 0;
 }
 
   
