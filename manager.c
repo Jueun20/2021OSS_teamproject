@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int selectMenu(){
         int menu;
-        printf("\n*** HOUSE KEEPER BOOK ***\n");
+        printf("\n*** HOUSE KEEPING BOOK ***\n");
         printf("1. 조회\n");
         printf("2. 추가\n");
         printf("3. 수정\n");
