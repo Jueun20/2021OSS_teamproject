@@ -20,9 +20,9 @@ int selectMenu(){
         return menu;
 }
 
-int selectDataNo(Item *p, int count){
+int selectDataNum(Item *p, int count){
         int no;
-        listProduct(s, count);
+//        listItem(p, count);
         printf("번호는(취소:0)? ");
         scanf("%d", &no);
         return no;
