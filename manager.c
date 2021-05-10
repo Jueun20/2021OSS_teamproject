@@ -1,3 +1,4 @@
+#include <stdio.h>
 int selectMenu(){
         int menu;
         printf("\n*** HOUSE KEEPER BOOK ***\n");
