@@ -50,6 +50,10 @@ int main(void){
     else if(menu == 7) {
       searchCate(ilist, index);
     }
+    else if(menu == 8) {
+      searchDate(ilist, index);
+    }
+    
 
 
 
