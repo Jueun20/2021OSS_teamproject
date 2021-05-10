@@ -41,6 +41,15 @@ int main(void){
         printf("=> 삭제되었습니다 :-)\n");
       }
     }
+    else if(menu == 5) {
+      saveData(ilist, index);
+    }
+    else if(menu == 6) {
+      searchName(ilist, index);
+    }
+    else if(menu == 7) {
+      searchCate(ilist, index);
+    }
 
 
 
