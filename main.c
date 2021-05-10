@@ -14,7 +14,14 @@ int main(void){
     if(menu == 1){
       listProduct(plist, index);
     }
+    else if(menu == 2){
+      count += createProduct(&plist[index]);
+      index++;
+    }
+
   }
+}
+
   
     
     
