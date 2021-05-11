@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "item.h"
 
+//메뉴 선택 함수
 int selectMenu(){
         int menu;
         printf("\n*** HOUSE KEEPING BOOK ***\n");
@@ -20,6 +21,7 @@ int selectMenu(){
         return menu;
 }
 
+//데이터 항목을 고르는 함수
 int selectDataNum(Item *p, int count){
         int no;
 //        listItem(p, count);
@@ -27,3 +29,10 @@ int selectDataNum(Item *p, int count){
         scanf("%d", &no);
         return no;
 }
+
+//번호를 고르는 함수
+int selectDataNum(Item *p, int count){
+        
+}
+
+
