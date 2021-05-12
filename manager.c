@@ -52,7 +52,7 @@ void listItem(Item *p, int count){
         for (int i = 0; i < count; i ++){
                 if (p[i].price == -1)   continue;
                 printf("%2d\t", i + 1);
-                readProduct(p[i]);
+                readItem(p[i]);
         }
         printf("\n");
 }
