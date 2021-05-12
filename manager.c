@@ -49,7 +49,9 @@ void searchData(Item *p, int count){
 void listItem(Item *p, int count){
         printf("\n");
         printf("=================================================================\n");
-       
+        for (int i = 0; i < count; i ++){
+                
+        }
 }
 
 //loadData()
