@@ -51,6 +51,8 @@ void listItem(Item *p, int count){
         printf("=================================================================\n");
         for (int i = 0; i < count; i ++){
                 if (p[i].price == -1)   continue;
+                printf("%2d\t", i + 1);
+                readProduct(p[i]);
         }
 }
 
