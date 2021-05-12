@@ -54,6 +54,7 @@ void listItem(Item *p, int count){
                 printf("%2d\t", i + 1);
                 readProduct(p[i]);
         }
+        printf("\n");
 }
 
 //loadData()
