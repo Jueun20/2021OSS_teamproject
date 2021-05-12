@@ -50,7 +50,7 @@ void listItem(Item *p, int count){
         printf("\n");
         printf("=================================================================\n");
         for (int i = 0; i < count; i ++){
-                
+                if (p[i].price == -1)   continue;
         }
 }
 
