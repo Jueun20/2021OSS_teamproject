@@ -87,7 +87,6 @@ int loadData(Item *p){
                         fscanf(fp, "%s", &p[i].cate);
                         fscanf(fp, "%d", &p[i].price);
                         fscanf(fp, "%d", &p[i].date);
-
                 }
                 fclose(fp);
                 printf("\n");
