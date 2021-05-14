@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "item.h"
 
 //메뉴 선택 함수
@@ -30,13 +31,25 @@ int selectDataNum(Item *p, int count){
         return no;
 }
 
-//번호를 고르는 함수
-int selectDataNum(Item *p, int count){
-        
-}
 
 //제품의 분류항목을 검색하는 함수
 void searchCate(Item *p, int count){
+        int scnt =0;
+        char search[20];
+        
+        printf("검색할 제품의 분류항목을 입력해주세요.: ");
+        scanf(%s, search);
+        printf("-------------------------------------\n");
+        for(int i = 0; i < count; i++){
+                if(s[i].price == -1) continue;
+                if(strstr(s[i].cate, search)) {
+                        printf("%2d", i+1);
+                        readItem(s[i]);
+                        scnt++;
+                }
+        }
+        if(scnt == 0) printf("검색된 데이터가 없습니다...\n");
+        printf("\n");
         
 }
 
