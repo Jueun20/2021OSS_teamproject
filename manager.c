@@ -74,7 +74,7 @@ void listItem(Item *p, int count){
 int loadData(Item *p){
         int i = 0;
         FILE *fp;
-        fp = fopen("product.txt", "rt");
+        fp = fopen("item.txt", "rt");
 
         if (fp == NULL){
                 printf("\n");
