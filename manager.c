@@ -30,11 +30,6 @@ int selectDataNum(Item *p, int count){
         return no;
 }
 
-//번호를 고르는 함수
-int selectDataNum(Item *p, int count){
-        
-}
-
 //제품의 분류항목을 검색하는 함수
 void searchCate(Item *p, int count){
         
