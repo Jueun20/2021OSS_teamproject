@@ -72,7 +72,33 @@ void listItem(Item *p, int count){
 
 //loadData()
 int loadData(Item *p){
-        
+        int i = 0;
+        FILE *fp;
+        fp = fopen("product.txt", "rt");
+
+        if (fp == NULL){
+                printf("\n");
+                printf("=> 파일 없음\n");
+        }
+        else {
+                for (i = 0; i < 20; i ++ ){
+                        fscanf(fp, "%s", p[i].name);
+                        if (feof(fp)) break;
+                        fscanf(fp, "%d", &p[i].weight);
+                        fscanf(fp, "%d", &p[i].price);
+                        fscanf(fp, "%f", &p[i].star);
+
+                        if(p[i].star - (int)p[i].star >= 0.5)
+                                p[i].starCount = (int)p[i].star + 1;
+                        else
+                                p[i].starCount = (int)p[i].star;
+                }
+                fclose(fp);
+                printf("\n");
+                printf("=> 파일 데이터 불러오기 성공!");
+                printf("\n");
+        }
+        return i;
 }
 
 //saveData()
