@@ -84,7 +84,7 @@ int loadData(Item *p){
                 for (i = 0; i < 20; i ++ ){
                         fscanf(fp, "%s", p[i].name);
                         if (feof(fp)) break;
-                        fscanf(fp, "%d", &p[i].weight);
+                        fscanf(fp, "%s", &p[i].cate);
                         fscanf(fp, "%d", &p[i].price);
                         fscanf(fp, "%f", &p[i].star);
 
