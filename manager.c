@@ -88,7 +88,6 @@ int loadData(Item *p){
                         fscanf(fp, "%d", &p[i].price);
                         fscanf(fp, "%d", &p[i].date);
 
-                                p[i].starCount = (int)p[i].star + 1;
                         else
                                 p[i].starCount = (int)p[i].star;
                 }
