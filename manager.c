@@ -120,7 +120,7 @@ void saveData(Item *p, int count){
         for (int i = 0; i < count; i ++){
                 if (p[i].price == -1)   continue;
                 else
-                        fprintf(fp, "%s %s %d %f\n", p[i].name, p[i].cate, p[i].price, p[i].star);
+                        fprintf(fp, "%s %s %d %d\n", p[i].name, p[i].cate, p[i].price, p[i].date);
         }
         fclose(fp);
         printf("=> 저장됨!(파일명: product.txt)\n");
