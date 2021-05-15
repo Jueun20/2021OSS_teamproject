@@ -123,7 +123,7 @@ void saveData(Item *p, int count){
                         fprintf(fp, "%s %s %d %d\n", p[i].name, p[i].cate, p[i].price, p[i].date);
         }
         fclose(fp);
-        printf("=> 저장됨!(파일명: product.txt)\n");
+        printf("=> 저장되!(파일명: product.txt)\n");
 }
 
 //searchName()
