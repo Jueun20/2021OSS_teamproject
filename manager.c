@@ -114,7 +114,16 @@ int loadData(Item *p){
 
 //saveData()
 void saveData(Item *p, int count){
-        
+        FILE *fp;
+        fp = fopen("houseKeeping.txt", "wt");
+
+        for (int i = 0; i < count; i ++){
+                if (p[i].price == -1)   continue;
+                else
+                        fprintf(fp, "%s %d %d %f\n", p[i].name, p[i].weight, p[i].price, p[i].star);
+        }
+        fclose(fp);
+        printf("=> 저장됨!(파일명: product.txt)\n");
 }
 
 //searchName()
