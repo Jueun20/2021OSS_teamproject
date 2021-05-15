@@ -128,5 +128,21 @@ void saveData(Item *p, int count){
 
 //searchName()
 void searchName(Item *p, int count){
-        
+        char search[30];
+        int scnt = 0;
+
+        printf("검색할 이름: ");
+        scanf(" %s", search);
+
+        for (int i = 0; i < count; i ++){
+                if (p[i].price == -1)   continue;
+                else if (strstr(p[i].name, search)){
+                        printf("=================================================================\n");
+                        printf("%2d\t", i + 1);
+                        readProduct(p[i]);
+                        scnt ++;
+                }
+        }
+        if (scnt == 0)
+                printf("=> 검색한 이름의 데이터 없음!\n");
 }
