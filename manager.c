@@ -139,10 +139,10 @@ void searchName(Item *p, int count){
                 else if (strstr(p[i].name, search)){
                         printf("=================================================================\n");
                         printf("%2d\t", i + 1);
-                        readProduct(p[i]);
+                        readItem(p[i]);
                         scnt ++;
                 }
         }
         if (scnt == 0)
-                printf("=> 검색한 이름의 데이터 없음!\n");
+                printf("=> 검색한 내용의 데이터 없음!\n");
 }
