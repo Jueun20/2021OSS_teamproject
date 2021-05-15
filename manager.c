@@ -58,7 +58,7 @@ void searchData(Item *p, int count){
         int scnt =0;
         char search[20];
         
-        printf("검색할 제품의 등로 날짜를 입력해주세요.: ");
+        printf("검색할 제품의 등록 날짜를 입력해주세요.: ");
         scanf(%s, search);
         printf("-------------------------------------\n");
         for(int i = 0; i < count; i++){
@@ -94,7 +94,7 @@ int loadData(Item *p){
 
         if (fp == NULL){
                 printf("\n");
-                printf("=> 파일 없음\n");
+                printf("=> 파일이 없습니다...\n");
         }
         else {
                 for (i = 0; i < 20; i ++ ){
@@ -106,7 +106,7 @@ int loadData(Item *p){
                 }
                 fclose(fp);
                 printf("\n");
-                printf("=> 파일 데이터 불러오기 성공!");
+                printf("=> 파일 데이터 불러오기 성공하였습니다~!");
                 printf("\n");
         }
         return i;
