@@ -131,7 +131,7 @@ void searchName(Item *p, int count){
         char search[30];
         int scnt = 0;
 
-        printf("검색할 이름: ");
+        printf("검색할 내용을 입력하세요: ");
         scanf(" %s", search);
 
         for (int i = 0; i < count; i ++){
