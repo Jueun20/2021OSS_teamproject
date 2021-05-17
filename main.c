@@ -7,6 +7,9 @@ int main(void){
 	Item ilist[50];
 	int index = 0;
 	int count = 0, menu;
+	
+	count = loadData(ilist);
+	index = count;
 
 	while (1){
 		menu = selectMenu();
