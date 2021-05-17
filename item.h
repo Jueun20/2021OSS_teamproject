@@ -18,4 +18,4 @@ void saveData(Item *p, int count); //5. 제품 파일에 저장하기
 
 void searchName(Item *p, int count); //6. 제품 검색하기_이름
 void searchCate(Item *p, int count); //7. 제품 검색하기_분류
-void searchData(Item *p, int count); //8. 제품 검색하기_날짜
+void searchDate(Item *p, int count); //8. 제품 검색하기_날짜
