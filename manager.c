@@ -37,13 +37,13 @@ void searchCate(Item *p, int count){
         int scnt =0;
         char search[20];
         
-        printf("검색할 제품의 분류항목을 입력해주세요.: ");
+        printf("검색할 제품의 분류항목을 입력하세요: ");
         scanf(" %s", search);
-        printf("-------------------------------------\n");
         for(int i = 0; i < count; i++){
                 if(p[i].price == -1) continue;
                 if(strstr(p[i].cate, search)) {
-                        printf("%2d", i+1);
+			printf("=================================================================\n");
+                        printf("%2d\t", i+1);
                         readItem(p[i]);
                         scnt++;
                 }
@@ -59,15 +59,15 @@ void searchDate(Item *p, int count){
         char search[20];
         char change[20];
 
-        printf("검색할 제품의 등록 날짜를 입력해주세요.: ");
+        printf("검색할 제품의 등록 날짜를 입력하세요: ");
         scanf(" %s", search);
-        printf("-------------------------------------\n");
         for(int i = 0; i < count; i++){
                 if(p[i].price == -1) continue;
 		int a = p[i].price;
 		sprintf(change, "%d", a);		
                 if(strstr(change, search)) {
-                        printf("%2d", i+1);
+			printf("=================================================================\n");
+                        printf("%2d\t", i+1);
                         readItem(p[i]);
                         scnt++;
                 }
