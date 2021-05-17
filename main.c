@@ -7,6 +7,7 @@ int main(void){
 	Item ilist[50];
 	int index = 0;
 	int count = 0, menu;
+
 	while (1){
 		menu = selectMenu();
     		if(menu == 0) break;
