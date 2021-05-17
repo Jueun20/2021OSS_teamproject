@@ -5,4 +5,4 @@ CRUD.o : CRUD.c item.h
 manager.o : manager.c item.h
 	gcc -c manager.c
 clean :
-	rm *.o item
+	rm *.o item houseKeeping.txt
