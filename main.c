@@ -20,7 +20,6 @@ int main(void){
 			}
 			else{
 				listItem(ilist, index);
-				readItem(ilist[0]);
 			}
 			
     		}
