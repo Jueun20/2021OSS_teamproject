@@ -25,7 +25,7 @@ int selectMenu(){
 //데이터 항목을 고르는 함수
 int selectDataNum(Item *p, int count){
         int no;
-//        listItem(p, count);
+        listItem(p, count);
         printf("번호는(취소:0)? ");
         scanf("%d", &no);
         return no;
@@ -123,10 +123,10 @@ void saveData(Item *p, int count){
         for (int i = 0; i < count; i ++){
                 if (p[i].price == -1)   continue;
                 else
-                        fprintf(fp, "%s %s %d %d\n", p[i].name, p[i].cate, p[i].price, p[i].date);
+			fprintf(fp, "%s %s %d %d\n", p[i].name, p[i].cate, p[i].price, p[i].date);
         }
         fclose(fp);
-        printf("=> 저장되었습니다!(파일명: Item.txt)\n");
+        printf("=> 저장되었습니다!(파일명: houseKeeping.txt)\n");
 }
 
 //searchName()
