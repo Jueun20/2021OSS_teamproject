@@ -54,7 +54,7 @@ void searchCate(Item *p, int count){
 }
 
 //제품의 등록 날짜를 검색하는 함수
-void searchData(Item *p, int count){
+void searchDate(Item *p, int count){
         int scnt =0;
         char search[20];
         char change[20];
