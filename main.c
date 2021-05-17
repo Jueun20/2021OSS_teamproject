@@ -15,6 +15,9 @@ int main(void){
 		menu = selectMenu();
     		if(menu == 0) break;
     		if(menu == 1){
+			if(count == 0){
+				printf("데이터가 존재하지 않습니다...\n");
+			}
 			listItem(ilist, index);
 			readItem(ilist[0]);
     		}
@@ -23,6 +26,9 @@ int main(void){
 			index++;
     		}
     		else if(menu == 3){
+			if(count == 0){
+				printf("데이터가 존재하지 않습니다...\n");
+			}
 			int no = selectDataNum(ilist, index);
 			if(no > 0){
 				updateItem(&ilist[no-1]);
@@ -33,6 +39,9 @@ int main(void){
       			}
     		}
     		else if(menu == 4){
+			if(count == 0){
+				printf("데이터가 존재하지 않습니다...\n");
+			}
 			int no = selectDataNum(ilist, index);
 			if(no > 0) {
 				printf("정말로 삭제하시겠습니까?(삭제: 1) ");
